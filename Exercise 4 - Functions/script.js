@@ -9,7 +9,7 @@ function describeYourSelf() {
 
   // დავალება 1:
   // 5 ცვლადში აღწერეთ თქვენი თავი.
-  const birthYear =1990;
+  const birthYear = 1990;
   let age = 30;
   const education = "Astrophysics";
   const homeTown = "Tbilisi";
@@ -125,7 +125,7 @@ function describeYourSelf() {
   } else {
     console.log("my birthday was not yet in this year ");
   }
- 
+
   let first = Number(prompt("Pirveli ricxvi"));
   let sec = Number(prompt("Meore ricxvi"));
   function sum(num1, num2) {
@@ -139,21 +139,20 @@ function describeYourSelf() {
   // დავალება 8:
   // ზემოთ დაწერილი ფუნქციის მაგვარად დაწერეთ ფუნქციები multiply, divide, subract, გამოიძახეთ ისინი და გამოიტანეთ მათი შედეგები
   // console.log()-აბი არ გამოიყენოთ არცერთ ზემოთ აღნიშნულ ფუნქციაში(multiply, divide, subract)
-  
+
   function multiply(num1, num2) {
     return num1 * num2;
   }
   let res1 = multiply(first, sec);
   console.log("multiply", res1);
-  
- ///////////////////////////////// 
+
+  /////////////////////////////////
   function divide(num1, num2) {
     return num1 / num2;
-}
-    let res2 = divide(first, sec);
-    console.log("divide", res2);
-  
-  
+  }
+  let res2 = divide(first, sec);
+  console.log("divide", res2);
+
   ///////////////////////////////
   function subtract(num1, num2) {
     return num1 - num2;
@@ -161,20 +160,20 @@ function describeYourSelf() {
   let res3 = subtract(first, sec);
   console.log("subtract", res3);
 
-
   // დავალება 9
   // გამოიძახეთ ფუნქია multPositiveNumbers - რიცხვებით 10 და 20 და დაბეჭდეთ რეზულტატი
   // გამოიძახეთ ფუნქცია multPositiveNumbers - რიცხვებით -10 და 20 და დაბეჭდეთ რეზულტატი
   // გამოიძახეთ ფუნქცია multPositiveNumbers - რიცხვებით 10 და -20 და დაბეჭდეთ რეზულტატი
   // ზემოთ ფუნქციის მიერ დაბრუნებული მნიშვნელობები შეინახეთ ცვლადებში
   // შეადარეთ ცვლადები. თუ რომელიმე არ დაემთხვა რომელიმე სხვას დაბეჭდეთ "ფუნქციაში შეცდომაა"
-  const pos1 = multPositiveNumbers(10,20)
-  
-  const pos2 = multPositiveNumbers(-10,20)
+  const pos1 = multPositiveNumbers(10, 20);
+  const pos2 = multPositiveNumbers(-10, 20);
+  const pos3 = multPositiveNumbers(10, -20);
+  console.log("multPositiveNumbers-ის შედეგები", pos1, pos2, pos3);
 
-  const pos3 = multPositiveNumbers(10,-20)
-  console.log('multPositiveNumbers-ის შედეგები',pos1,pos2,pos3);
-
+  if (pos1 !== pos2 || pos2 !== pos3 || pos1 !== pos3) {
+    console.log("error in the function!");
+  }
 
   // დავალება 10:
   // დაწერეთ ფუნქცია multNegative(); ამ ფუნქციის მიზანია ნამრავლი სულ უარყოფითი იყოს
@@ -195,19 +194,17 @@ function isAdult(age) {
 
 // don't forget to add arguments
 function multNegative(num1, num2) {
-    const result = num1 * num2;
-  if (result>0) {
+  const result = num1 * num2;
+  if (result > 0) {
     // if product is more than 0 return -result
     return -result;
   }
   return result; //otherwise return result
-    
-  
 }
 
 function multPositiveNumbers(num1, num2) {
-    const result = num1 * num2;
-  if (result<0) {
+  const result = num1 * num2;
+  if (result < 0) {
     // if product is less than 0 return -result
     return -result;
   }
