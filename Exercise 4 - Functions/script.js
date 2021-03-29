@@ -24,4 +24,4 @@ secondVar = thirdVar;
 
 console.log('First: ', firstVar);
 console.log('Second:', secondVar);
-console.log("Zura  Papiashvili");
+console.log("Zura-Papiashvili");
